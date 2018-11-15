@@ -1,0 +1,124 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Sat Apr 21 01:01:40 EET 2018
+Menu Activated: /C:/Electric/P1_Sub.jelib
+--------------- 1 --------------
+  Sat Apr 21 01:02:25 EET 2018
+ProcessKeyBinding 401 when=1524265345626 modifiers=80 code=11 char=ffff false false
+--------------- 2 --------------
+  Sat Apr 21 01:02:25 EET 2018
+ProcessKeyBinding 402 when=1524265345627 modifiers=0 code=11 char=ffff false false
+--------------- 3 --------------
+  Sat Apr 21 01:02:25 EET 2018
+ProcessKeyBinding 401 when=1524265345643 modifiers=80 code=11 char=ffff false false
+--------------- 4 --------------
+  Sat Apr 21 01:02:28 EET 2018
+ProcessKeyBinding 402 when=1524265348815 modifiers=0 code=11 char=ffff false false
+--------------- 5 --------------
+  Sat Apr 21 01:02:29 EET 2018
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+--------------- 6 --------------
+  Sat Apr 21 01:02:29 EET 2018
+ProcessKeyBinding 400 when=1524265349710 modifiers=0 code=0 char=6d(m) false false
+--------------- 7 --------------
+  Sat Apr 21 01:02:40 EET 2018
+ProcessKeyBinding 400 when=1524265360656 modifiers=0 code=0 char=1b false false
+--------------- 8 --------------
+  Sat Apr 21 01:02:40 EET 2018
+ProcessKeyBinding 402 when=1524265360814 modifiers=0 code=1b char=1b false false
+--------------- 9 --------------
+  Sat Apr 21 01:02:42 EET 2018
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+--------------- 10 --------------
+  Sat Apr 21 01:02:42 EET 2018
+ProcessKeyBinding 400 when=1524265362016 modifiers=0 code=0 char=6d(m) false false
+--------------- 11 --------------
+  Sat Apr 21 01:02:47 EET 2018
+ProcessKeyBinding 401 when=1524265367768 modifiers=80 code=11 char=ffff false false
+--------------- 12 --------------
+  Sat Apr 21 01:02:47 EET 2018
+ProcessKeyBinding 402 when=1524265367769 modifiers=0 code=11 char=ffff false false
+--------------- 13 --------------
+  Sat Apr 21 01:02:47 EET 2018
+ProcessKeyBinding 401 when=1524265367777 modifiers=80 code=11 char=ffff false false
+--------------- 14 --------------
+  Sat Apr 21 01:02:50 EET 2018
+ProcessKeyBinding 402 when=1524265370411 modifiers=0 code=11 char=ffff false false
+--------------- 15 --------------
+  Sat Apr 21 01:02:51 EET 2018
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+--------------- 16 --------------
+  Sat Apr 21 01:02:51 EET 2018
+ProcessKeyBinding 400 when=1524265371187 modifiers=0 code=0 char=6d(m) false false
+--------------- 17 --------------
+  Sat Apr 21 01:02:58 EET 2018
+ProcessKeyBinding 400 when=1524265378107 modifiers=0 code=0 char=1b false false
+--------------- 18 --------------
+  Sat Apr 21 01:02:58 EET 2018
+ProcessKeyBinding 402 when=1524265378288 modifiers=0 code=1b char=1b false false
+--------------- 19 --------------
+  Sat Apr 21 01:02:58 EET 2018
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+--------------- 20 --------------
+  Sat Apr 21 01:02:59 EET 2018
+ProcessKeyBinding 400 when=1524265378993 modifiers=0 code=0 char=6d(m) false false
+--------------- 21 --------------
+  Sat Apr 21 01:03:13 EET 2018
+ProcessKeyBinding 401 when=1524265393752 modifiers=80 code=11 char=ffff false false
+--------------- 22 --------------
+  Sat Apr 21 01:03:13 EET 2018
+ProcessKeyBinding 402 when=1524265393752 modifiers=0 code=11 char=ffff false false
+--------------- 23 --------------
+  Sat Apr 21 01:03:13 EET 2018
+ProcessKeyBinding 401 when=1524265393759 modifiers=80 code=11 char=ffff false false
+--------------- 24 --------------
+  Sat Apr 21 01:03:16 EET 2018
+ProcessKeyBinding 402 when=1524265396569 modifiers=0 code=11 char=ffff false false
+--------------- 25 --------------
+  Sat Apr 21 01:03:17 EET 2018
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+--------------- 26 --------------
+  Sat Apr 21 01:03:17 EET 2018
+ProcessKeyBinding 400 when=1524265397100 modifiers=0 code=0 char=6d(m) false false
+--------------- 27 --------------
+  Sat Apr 21 01:03:22 EET 2018
+ProcessKeyBinding 400 when=1524265402838 modifiers=0 code=0 char=1b false false
+--------------- 28 --------------
+  Sat Apr 21 01:03:22 EET 2018
+ProcessKeyBinding 402 when=1524265402993 modifiers=0 code=1b char=1b false false
+--------------- 29 --------------
+  Sat Apr 21 01:03:23 EET 2018
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+--------------- 30 --------------
+  Sat Apr 21 01:03:23 EET 2018
+ProcessKeyBinding 400 when=1524265403645 modifiers=0 code=0 char=6d(m) false false
+--------------- 31 --------------
+  Sat Apr 21 01:03:29 EET 2018
+ProcessKeyBinding 401 when=1524265409561 modifiers=80 code=11 char=ffff false false
+--------------- 32 --------------
+  Sat Apr 21 01:03:29 EET 2018
+ProcessKeyBinding 402 when=1524265409561 modifiers=0 code=11 char=ffff false false
+--------------- 33 --------------
+  Sat Apr 21 01:03:29 EET 2018
+ProcessKeyBinding 401 when=1524265409570 modifiers=80 code=11 char=ffff false false
+--------------- 34 --------------
+  Sat Apr 21 01:03:32 EET 2018
+ProcessKeyBinding 402 when=1524265412031 modifiers=0 code=11 char=ffff false false
+--------------- 35 --------------
+  Sat Apr 21 01:03:32 EET 2018
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+--------------- 36 --------------
+  Sat Apr 21 01:03:32 EET 2018
+ProcessKeyBinding 400 when=1524265412708 modifiers=0 code=0 char=6d(m) false false
+--------------- 37 --------------
+  Sat Apr 21 01:03:38 EET 2018
+ProcessKeyBinding 400 when=1524265418117 modifiers=0 code=0 char=1b false false
+--------------- 38 --------------
+  Sat Apr 21 01:03:38 EET 2018
+ProcessKeyBinding 402 when=1524265418238 modifiers=0 code=1b char=1b false false
+--------------- 39 --------------
+  Sat Apr 21 01:03:38 EET 2018
+Menu Activated: Edit | Modes | Edit | Toggle Measure Distance
+--------------- 40 --------------
+  Sat Apr 21 01:03:38 EET 2018
+ProcessKeyBinding 400 when=1524265418954 modifiers=0 code=0 char=6d(m) false false

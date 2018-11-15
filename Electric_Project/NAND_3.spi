@@ -1,0 +1,28 @@
+*** SPICE deck for cell NAND_3{sch} from library checkpoint_3_layout_completed_simulation
+*** Created on Thu Jan 07, 2010 23:57:30
+*** Last revised on Wed Mar 28, 2018 11:19:01
+*** Written on Wed Mar 28, 2018 11:19:59 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: NAND_3{sch}
+Mnmos@0 net@21 C gnd gnd NMOS L=0.2U W=2.4U
+Mnmos@1 AnandBnandC B vdd vdd PMOS L=0.2U W=1.948U
+Mnmos@2 net@35 B net@21 gnd NMOS L=0.2U W=2.4U
+Mnmos@3 AnandBnandC A net@35 gnd NMOS L=0.2U W=2.4U
+Mpmos@0 AnandBnandC C vdd vdd PMOS L=0.2U W=1.948U
+Mpmos@1 AnandBnandC A vdd vdd PMOS L=0.2U W=1.948U
+
+* Spice Code nodes in cell cell 'NAND_3{sch}'
+vdd vdd 0 DC 5
+va A 0 DC pwl 10ns 5 20ns 0 70ns 0 80ns 5
+vb B 0 DC pwl 10ns 5 20ns 0 70ns 0 80ns 5
+vc C 0 DC pwl 10ns 5 20ns 0 70ns 0 80ns 5
+.measure tran tf trig v(AnandBnandC) val=4.5 fall=1 targ v(AnandBnandC) val=0.5 fall=1
+.measure tran tr trig v(AnandBnandC) val=0.5 rise=1 targ v(AnandBnandC) val=4.5 rise=1
+cload AnandBnandC 0 250fF
+.tran 0 100ns
+.include C:\Electric\scmos18.txt
+.END

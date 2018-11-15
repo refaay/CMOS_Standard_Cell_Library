@@ -1,0 +1,8 @@
+* Specify power supply – 3.3v operation
+vsupply vdd 0 3.3v
+vgnd gnd 0 0v
+* Specify transient analysis
+.tran 0.01ns 5ns
+* Dummy control block for SPICE 3
+.control
+.endc

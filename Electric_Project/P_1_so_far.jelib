@@ -1,0 +1,14 @@
+# header information:
+HP_1_so_far|9.07
+
+# Views:
+Vicon|ic
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D100.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell inv;1{ic}
+Cinv;1{ic}||artwork|1523982864783|1523982864861|E|IO_dummy_object()Sinv;1{ic}|IO_true_library()SV1_updated
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@0||0|0||||
+X

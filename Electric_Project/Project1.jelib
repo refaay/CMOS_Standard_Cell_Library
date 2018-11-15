@@ -1,0 +1,75 @@
+# header information:
+HProject1|9.07
+
+# Views:
+Vicon|ic
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D100.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell inv_1;1{ic}
+Cinv_1;1{ic}||artwork|1522614007827|1522614167102|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NTriangle|art@2||-1|0|4|4|RRR|
+NCircle|art@3||1.5|0|1|1||
+Nschematic:Bus_Pin|pin@0||-5|0||||
+Nschematic:Wire_Pin|pin@1||-3|0||||
+Nschematic:Bus_Pin|pin@2||4|0||||
+Nschematic:Wire_Pin|pin@3||2|0||||
+Aschematic:wire|net@0|||0|pin@1||-3|0|pin@0||-5|0
+Aschematic:wire|net@1|||1800|pin@3||2|0|pin@2||4|0
+Ein||D5G2;|pin@0||I
+Eout||D5G2;|pin@2||O
+X
+
+# Cell inv_1;1{sch}
+Cinv_1;1{sch}||schematic|1522613371254|1522614007831|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGlobal-Signal|conn@0||-8|-7|||R|
+NGlobal-Signal|conn@1||12|-7|||RRR|
+NGround|gnd@0||4|-16||||
+Iinv_1;1{ic}|inv_1@0||20|8|||D5G4;
+NTransistor|nmos@1||2|-11|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S3
+NWire_Pin|pin@0||1|-7||||
+NWire_Pin|pin@1||4|-7||||
+NTransistor|pmos@0||2|-4|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S6
+NPower|pwr@0||4|1||||
+Awire|net@0|||2700|pmos@0|d|4|-2|pwr@0||4|1
+Awire|net@2|||1800|conn@0||-6.5|-7|pin@0||1|-7
+Awire|net@3|||900|pmos@0|g|1|-4|pin@0||1|-7
+Awire|net@4|||2700|nmos@1|g|1|-11|pin@0||1|-7
+Awire|net@5|||900|nmos@1|s|4|-13|gnd@0||4|-14
+Awire|net@6|||2700|nmos@1|d|4|-9|pin@1||4|-7
+Awire|net@7|||2700|pin@1||4|-7|pmos@0|s|4|-6
+Awire|net@8|||0|conn@1||10.5|-7|pin@1||4|-7
+Ein||D5G2;|conn@0||I
+Eout||D5G2;|conn@1||O
+X
+
+# Cell osc5;1{sch}
+Cosc5;1{sch}||schematic|1522614229400|1522614488141|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGlobal-Signal|conn@0||61|11|||RRR|
+Iinv_1;1{ic}|inv_1@0||-19|4|||D5G4;
+Iinv_1;1{ic}|inv_1@1||-4|4|||D5G4;
+Iinv_1;1{ic}|inv_1@2||11|4|||D5G4;
+Iinv_1;1{ic}|inv_1@3||28|4|||D5G4;
+Iinv_1;1{ic}|inv_1@4||45|4|||D5G4;
+Iinv_1;1{ic}|inv_1@6||-35|37|||D5G4;
+NWire_Pin|pin@0||-24|12||||
+NWire_Pin|pin@1||46|12||||
+NWire_Pin|pin@2||49|12||||
+NWire_Pin|pin@3||49|11||||
+Awire|net@0|||1800|inv_1@0|out|-15|4|inv_1@1|in|-9|4
+Awire|net@1|||1800|inv_1@1|out|0|4|inv_1@2|in|6|4
+Awire|net@2|||1800|inv_1@2|out|15|4|inv_1@3|in|23|4
+Awire|net@3|||1800|inv_1@3|out|32|4|inv_1@4|in|40|4
+Awire|net@4|||2700|inv_1@0|in|-24|4|pin@0||-24|12
+Awire|net@5|||1800|pin@0||-24|12|pin@1||46|12
+Awire|net@6|||1800|pin@1||46|12|pin@2||49|12
+Awire|net@7|||2700|inv_1@4|out|49|4|pin@2||49|12
+Awire|net@8|||0|conn@0||59.5|11|pin@3||49|11
+Awire|net@9|||900|pin@2||49|12|pin@3||49|11
+Eout||D5G2;|conn@0||O
+X

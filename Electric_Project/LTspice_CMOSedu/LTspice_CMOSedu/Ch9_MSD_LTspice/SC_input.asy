@@ -1,0 +1,49 @@
+Version 4
+SymbolType BLOCK
+LINE Normal 192 -128 192 -160
+LINE Normal -16 -128 -16 -160
+LINE Normal 80 -128 80 -160
+LINE Normal -48 -80 -64 -80
+LINE Normal -48 -32 -64 -32
+LINE Normal 224 -80 240 -80
+LINE Normal 224 -32 240 -32
+LINE Normal 32 -128 32 -160
+LINE Normal 128 -128 128 -160
+RECTANGLE Normal 224 -128 -48 -16
+TEXT 27 -69 Left 2 SC_input
+TEXT -40 -80 Left 2 lt
+TEXT -40 -32 Left 2 lb
+TEXT 196 -34 Left 2 rb
+TEXT 203 -81 Left 2 rt
+TEXT -35 -115 Left 2 p1
+TEXT 67 -116 Left 2 p2
+TEXT 174 -116 Left 2 vdd
+TEXT 14 -116 Left 2 p1i
+TEXT 115 -116 Left 2 p2i
+PIN 192 -160 NONE 8
+PINATTR PinName VDD
+PINATTR SpiceOrder 1
+PIN -16 -160 NONE 8
+PINATTR PinName p1
+PINATTR SpiceOrder 2
+PIN 80 -160 NONE 8
+PINATTR PinName p2
+PINATTR SpiceOrder 3
+PIN -64 -80 NONE 8
+PINATTR PinName lt
+PINATTR SpiceOrder 4
+PIN -64 -32 NONE 8
+PINATTR PinName lb
+PINATTR SpiceOrder 5
+PIN 240 -80 NONE 8
+PINATTR PinName rt
+PINATTR SpiceOrder 6
+PIN 240 -32 NONE 8
+PINATTR PinName rb
+PINATTR SpiceOrder 7
+PIN 32 -160 NONE 8
+PINATTR PinName p1i
+PINATTR SpiceOrder 8
+PIN 128 -160 NONE 8
+PINATTR PinName p2i
+PINATTR SpiceOrder 9

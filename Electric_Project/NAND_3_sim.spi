@@ -1,0 +1,44 @@
+*** SPICE deck for cell NAND_3_sim{sch} from library Proj1248xywz_multi
+*** Created on Fri Mar 23, 2018 21:42:28
+*** Last revised on Tue Apr 03, 2018 18:16:32
+*** Written on Tue Apr 03, 2018 18:16:43 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT Proj1248xywz_multi__NAND_3 FROM CELL NAND_3{sch}
+.SUBCKT Proj1248xywz_multi__NAND_3 A AnandBnandC B C
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@21 C gnd gnd NMOS L=0.2U W=1.8U
+Mnmos@1 AnandBnandC B vdd vdd PMOS L=0.2U W=1.5U
+Mnmos@2 net@35 B net@21 gnd NMOS L=0.2U W=1.8U
+Mnmos@3 AnandBnandC A net@35 gnd NMOS L=0.2U W=1.8U
+Mpmos@0 AnandBnandC C vdd vdd PMOS L=0.2U W=1.5U
+Mpmos@1 AnandBnandC A vdd vdd PMOS L=0.2U W=1.5U
+.ENDS Proj1248xywz_multi__NAND_3
+
+*** SUBCIRCUIT Proj1248xywz_multi__inv_20_10 FROM CELL inv_20_10{sch}
+.SUBCKT Proj1248xywz_multi__inv_20_10 in out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out in gnd gnd NMOS L=0.2U W=0.3U
+Mnmos@1 out in vdd vdd PMOS L=0.2U W=0.6U
+.ENDS Proj1248xywz_multi__inv_20_10
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: NAND_3_sim{sch}
+XNAND_3@0 in out vdd vdd Proj1248xywz_multi__NAND_3
+Xinv_20_1@1 out inv_20_1@1_out Proj1248xywz_multi__inv_20_10
+Xinv_20_1@2 out inv_20_1@2_out Proj1248xywz_multi__inv_20_10
+Xinv_20_1@3 out inv_20_1@3_out Proj1248xywz_multi__inv_20_10
+Xinv_20_1@4 out inv_20_1@4_out Proj1248xywz_multi__inv_20_10
+
+* Spice Code nodes in cell cell 'NAND_3_sim{sch}'
+vdd vdd 0 dc 5
+vin in 0 dc 0 pulse 0 5 10n 0.0001n 0.0001n 10n
+.tran 0 100ns
+.include C:\Electric\scmos18.txt
+.measure tpdr trig v(in) val=2.5 fall=1 TARG v(out) val=2.5 rise=1
+.measure tpdf trig v(in) val=2.5 rise=1 TARG v(out) val=2.5 fall=1
+.END

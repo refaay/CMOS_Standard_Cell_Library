@@ -1,0 +1,44 @@
+*** SPICE deck for cell inv_8_sim_0{sch} from library V1_updated
+*** Created on Tue Apr 17, 2018 06:15:37
+*** Last revised on Tue Apr 17, 2018 16:06:14
+*** Written on Tue Apr 17, 2018 18:23:36 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT V1_updated__inv_1 FROM CELL inv_1{sch}
+.SUBCKT V1_updated__inv_1 in out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out in gnd gnd NMOS L=0.2U W=0.3U
+Mnmos@1 out in vdd vdd PMOS L=0.2U W=0.7U
+.ENDS V1_updated__inv_1
+
+*** SUBCIRCUIT V1_updated__inv_8 FROM CELL inv_8{sch}
+.SUBCKT V1_updated__inv_8 in out
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 out in gnd gnd NMOS L=0.2U W=2.4U
+Mnmos@1 out in vdd vdd PMOS L=0.2U W=5.8U
+.ENDS V1_updated__inv_8
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: inv_8_sim_0{sch}
+Xinv_1@0 out inv_1@0_out V1_updated__inv_1
+Xinv_1@1 out inv_1@1_out V1_updated__inv_1
+Xinv_1@2 out inv_1@2_out V1_updated__inv_1
+Xinv_1@3 out inv_1@3_out V1_updated__inv_1
+Xinv_1@4 out inv_1@4_out V1_updated__inv_1
+Xinv_1@5 out inv_1@5_out V1_updated__inv_1
+Xinv_1@6 out inv_1@6_out V1_updated__inv_1
+Xinv_1@7 out inv_1@7_out V1_updated__inv_1
+Xinv_8@0 in out V1_updated__inv_8
+
+* Spice Code nodes in cell cell 'inv_8_sim_0{sch}'
+vdd vdd 0 dc 5
+vin in 0 dc pulse 0 5 10n 0.00000001ps 0.00000001ps 10n
+.tran 0 40n
+.include C:\Electric\scmos18.txt
+.measure tpdr trig v(in) val=2.5 fall=1 TARG v(out) val=2.5 rise=1
+.measure tpdf trig v(in) val=2.5 rise=1 TARG v(out) val=2.5 fall=1
+.END

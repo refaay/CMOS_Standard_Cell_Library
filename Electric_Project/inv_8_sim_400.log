@@ -1,0 +1,85 @@
+Circuit: *** SPICE deck for cell inv_8_sim_400{sch} from library V1_updated2
+
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+WARNING: Node INV_1@1_IN is floating.
+WARNING: Node NET@13 is floating.
+WARNING: Node NET@7 is floating.
+
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Singular matrix:  Check node net@7
+   Iteration No. 1
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
+Singular matrix:  Check node net@7
+   Iteration No. 2
+Gmin = 0
+Singular matrix:  Check node net@7
+   Iteration No. 1
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Singular matrix:  Check node net@7
+   Iteration No. 1
+Singular matrix:  Check node net@7
+   Iteration No. 2
+Could not converge to DC with sources off!
+Starting source stepping with srcstepmethod=1
+Singular matrix:  Check node net@7
+   Iteration No. 1
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+tpdr=1.63938e-011 FROM 2.10005e-008 TO 2.10169e-008
+tpdf=4.64583e-011 FROM 1.03335e-008 TO 1.038e-008
+
+
+Date: Wed Apr 18 21:35:50 2018
+Total elapsed time: 0.297 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3180
+traniter = 2329
+tranpoints = 1093
+accept = 1078
+rejected = 15
+matrix size = 16
+fillins = 0
+solver = Normal
+Matrix Compiler1: 772 bytes object code size  0.3/0.2/[0.1]
+Matrix Compiler2: off  [0.3]/0.4/0.4
+

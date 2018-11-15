@@ -1,0 +1,130 @@
+# header information:
+Htutorial_2|9.07
+
+# Views:
+Vlayout|lay
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D300.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell NMOS_IV;1{lay}
+CNMOS_IV;1{lay}||mocmos|1262621562953|1262635167953||DRC_last_good_drc_area_date()G1262635789641|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1262635789641
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-N-Active-Con|contact@0||1.5|-4.5|5|||
+NMetal-1-N-Active-Con|contact@1||1.5|6|5|||
+NMetal-1-Polysilicon-1-Con|contact@2||-12|1||||
+NN-Transistor|nmos@0||1.5|1|7||||SIM_spice_model(D5G1;)SNMOS
+NN-Active-Pin|pin@0||1.5|-2.75||||
+NMetal-1-Pin|pin@1||1.5|-25.5||||
+NMetal-1-Pin|pin@2||-22|1||||
+NMetal-1-Pin|pin@3||22|6||||
+NMetal-1-Pin|pin@4||22|-4.5||||
+Ngeneric:Invisible-Pin|pin@5||-22.5|-13|||||SIM_spice_card(D5G2;)S[vs s 0 DC 0,vw w 0 DC 0,vg g 0 DC 0,vd d 0 DC 0,.dc vd 0 5 1m vg 0 5 1,".include C:\\Electric\\C5_models.txt"]
+NMetal-1-P-Well-Con|substr@0||1.5|-16.5|5|||
+AN-Active|net@0|||S2700|nmos@0|diff-top|1.5|4.75|contact@1||1.5|6
+AN-Active|net@1||7|IJS2700|contact@0||1.5|-4.5|pin@0||1.5|-2.75
+AN-Active|net@2|||S1800|nmos@0|diff-bottom|1.5|-2.75|pin@0||1.5|-2.75
+APolysilicon-1|net@3|||S0|nmos@0|poly-left|-5.5|1|contact@2||-12|1
+AMetal-1|net@4|||S900|substr@0||1.5|-16.5|pin@1||1.5|-25.5
+AMetal-1|net@5||1|S0|contact@2||-12|1|pin@2||-22|1
+AMetal-1|net@6||1|S1800|contact@1||1.5|6|pin@3||22|6
+AMetal-1|net@7||1|S1800|contact@0||1.5|-4.5|pin@4||22|-4.5
+Edrain|d|D5G2;|pin@3||U
+Egate|g|D5G2;|pin@2||U
+Egnd||D5G2;|pin@1||U
+Esource|s|D5G2;|pin@4||U
+X
+
+# Cell NMOS_IV;1{sch}
+CNMOS_IV;1{sch}||schematic|1262550763796|1262637114203|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||9|-0.25|-1|-1.5||
+N4-Port-Transistor|nmos-4@0||1|2.5|||R||ATTR_length(D5G0.5;RRRX0.25;Y-2;)D2.0|ATTR_width(D5G1;RRRX1;Y-2;)D10.0|SIM_spice_model(D5G1;RRRX-0.5;Y-3.5;)SNMOS
+Ngeneric:Invisible-Pin|pin@0||-2|-2|||||SIM_spice_card(D5G0.5;)S[vs s 0 DC 0,vw w 0 DC 0,vg g 0 DC 0,vd d 0 DC 0,.dc vd 0 5 1m vg 0 5 1,".include C:\\Electric\\C5_models.txt"]
+NWire_Pin|pin@1||9|1.5||||
+NWire_Pin|pin@2||3|-1||||
+NWire_Pin|pin@3||-1.5|2.5||||
+NWire_Pin|pin@4||3|7||||
+Awire|net@0|||1800|nmos-4@0|b|3|1.5|pin@1||9|1.5
+Awire|net@1|||900|pin@1||9|1.5|gnd@0||9|1
+Awire|net@2|||900|nmos-4@0|s|3|0.5|pin@2||3|-1
+Awire|net@3|||0|nmos-4@0|g|0|2.5|pin@3||-1.5|2.5
+Awire|net@4|||2700|nmos-4@0|d|3|4.5|pin@4||3|7
+Ed||D5G2;|pin@4||U
+Eg||D5G2;|pin@3||U
+Es||D5G2;|pin@2||U
+X
+
+# Cell PMOS_IV;1{lay}
+CPMOS_IV;1{lay}||mocmos|1262621548187|1262634046828||DRC_last_good_drc_area_date()G1262635792969|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1262635792969
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-P-Active-Con|contact@0||0|10|5|||
+NMetal-1-P-Active-Con|contact@1||0|-1|5|||
+NMetal-1-Polysilicon-1-Con|contact@2||-15|4.5||||
+NMetal-1-Pin|pin@0||-25|4.5||||
+NMetal-1-Pin|pin@1||0|31.5||||
+NMetal-1-Pin|pin@2||21.5|10||||
+NMetal-1-Pin|pin@3||22|-1||||
+Ngeneric:Invisible-Pin|pin@4||-27|21.5|||||SIM_spice_card(D5G2;)S[vs s 0 DC 0,vw w 0 DC 0,vg g 0 DC 0,vd d 0 DC 0,.dc vd 0 -5 -1m vg 0 -5 -1,".include C:\\Electric\\C5_models.txt"]
+NP-Transistor|pmos@0||0|4.5|7||||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-N-Well-Con|well@0||0|22|5|||
+APolysilicon-1|net@0|||S1800|contact@2||-15|4.5|pmos@0|poly-left|-7|4.5
+AP-Active|net@1|||S2700|pmos@0|diff-top|-2|8.25|contact@0||-2|10.5
+AP-Active|net@2|||S900|pmos@0|diff-bottom|-1|0.75|contact@1||-1|-1.5
+AMetal-1|net@3||1|S0|contact@2||-15|4.5|pin@0||-25|4.5
+AMetal-1|net@4|||S2700|well@0||0|22|pin@1||0|31.5
+AMetal-1|net@5||1|S1800|contact@0||0|10|pin@2||21.5|10
+AMetal-1|net@6||1|S1800|contact@1||0|-1|pin@3||22|-1
+Ed||D5G2;|pin@3||U
+Eg||D5G2;|pin@0||U
+Es||D5G2;|pin@2||U
+Ew||D5G2;|pin@1||U
+X
+
+# Cell PMOS_IV;1{sch}
+CPMOS_IV;1{sch}||schematic|1262554778546|1262637363843|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+N4-Port-Transistor|nmos-4@0||1.5|2|||YR|2|ATTR_length(D5G0.5;RRRX0.25;Y-2;)D2.0|ATTR_width(D5G1;RRRX1;Y-2;)D10.0|SIM_spice_model(D5G1;RRRX-0.5;Y-3.5;)SPMOS
+Ngeneric:Invisible-Pin|pin@0||-1.5|5.5|||||SIM_spice_card(D5G0.5;)S[vs s 0 DC 0,vw w 0 DC 0,vg g 0 DC 0,vd d 0 DC 0,.dc vd 0 -5 -1m vg 0 -5 -1,".include C:\\Electric\\C5_models.txt"]
+NWire_Pin|pin@1||3.5|6||||
+NWire_Pin|pin@2||-2|2||||
+NWire_Pin|pin@3||7.5|3||||
+NWire_Pin|pin@4||3.5|-1||||
+Awire|net@0|||2700|nmos-4@0|s|3.5|4|pin@1||3.5|6
+Awire|net@1|||0|nmos-4@0|g|0.5|2|pin@2||-2|2
+Awire|net@2|||1800|nmos-4@0|b|3.5|3|pin@3||7.5|3
+Awire|net@3|||900|nmos-4@0|d|3.5|0|pin@4||3.5|-1
+Ed||D5G2;|pin@4||U
+Eg||D5G2;|pin@2||U
+Es||D5G2;|pin@1||U
+Ew||D5G2;|pin@3||U
+X
+
+# Cell R_divider;1{lay}
+CR_divider;1{lay}||mocmos|1262482864515|1262540954968||DRC_last_good_drc_area_date()G1262541102782|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1262541102782
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@1||-98.25|-61.5||||
+NMetal-1-Pin|pin@2||-98.25|41||||
+Ngeneric:Invisible-Pin|pin@3||2.5|-57|||||SIM_spice_card(D5G10;)S[vin vin 0 DC 1,.tran 0 1]
+NN-Well-Resistor|resnwell@0||0|0.5|146.5|3|||SCHEM_resistance(D5G10;)S10k
+NN-Well-Resistor|resnwell@1||0|-34.5|146.5|3|||SCHEM_resistance(D5G10;)S10k
+AMetal-1|gnd|D5G10;|1|S900|resnwell@1|left|-98.25|-34.5|pin@1||-98.25|-61.5
+AMetal-1|vin|D5G10;|1|S2700|resnwell@0|left|-98.25|0.5|pin@2||-98.25|41
+AMetal-1|vout|D5G10;|1|S2700|resnwell@1|right|98.25|-34.5|resnwell@0|right|98.25|0.5
+X
+
+# Cell R_divider;1{sch}
+CR_divider;1{sch}||schematic|1262476865031|1262493186468|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NWire_Pin|pin@0||3|3||||
+NWire_Pin|pin@1||-5|3||||
+NWire_Pin|pin@2||3|-4.5||||
+Ngeneric:Invisible-Pin|pin@3||-3|0|||||SIM_spice_card(D5G1;)S[vin vin 0 DC 1,.tran 0 1]
+NResistor|resnwell@0||-0.5|3||||3|ATTR_length(D5G0.25;X-1.5;)D187.5|ATTR_width(D5G0.5;X1.5;)D15.0|SCHEM_resistance(D5G1;)S10k
+NResistor|resnwell@1||3|0|||R|3|ATTR_length(D5G0.25;X-1.5;)D187.5|ATTR_width(D5G0.5;X1.5;)D15.0|SCHEM_resistance(D5G1;)S10k
+Awire|gnd|D5G1;||900|resnwell@1|a|3|-2|pin@2||3|-4.5
+Awire|net@1|||900|pin@0||3|3|resnwell@1|b|3|2
+Awire|vin|D5G1;X-0.5;Y0.5;||0|resnwell@0|a|-2.5|3|pin@1||-5|3
+Awire|vout|D5G1;X0.5;Y0.5;||1800|resnwell@0|b|1.5|3|pin@0||3|3
+X

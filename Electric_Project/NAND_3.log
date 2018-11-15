@@ -1,0 +1,37 @@
+Circuit: *** SPICE deck for cell NAND_3{sch} from library checkpoint_3_layout_completed_simulation
+
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+tf=2.5814e-009 FROM 7.54645e-008 TO 7.80459e-008
+tr=2.48068e-009 FROM 1.26605e-008 TO 1.51411e-008
+
+
+Date: Wed Mar 28 11:20:00 2018
+Total elapsed time: 0.141 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2166
+traniter = 2158
+tranpoints = 1056
+accept = 1055
+rejected = 1
+matrix size = 11
+fillins = 0
+solver = Normal
+Matrix Compiler1:      28 opcodes  0.3/[0.1]/0.1
+Matrix Compiler2: 937 bytes object code size  0.3/0.3/[0.3]
+
