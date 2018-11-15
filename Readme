@@ -1,2 +1,0 @@
-To Run the DAG: ./out
-To Compile the project : g++ -std=c++11 DAGcreator.cpp -o out
